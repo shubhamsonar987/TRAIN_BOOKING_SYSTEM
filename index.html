@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Train Ticket Booking</h1>
+        <form id="ticketForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="train">Select Train:</label>
+            <select id="train" name="train" required>
+                <option value="Express">Express Train - ₹500</option>
+                <option value="Superfast">Superfast Train - ₹800</option>
+                <option value="Rajdhani">Rajdhani Express - ₹1200</option>
+            </select>
+
+            <label for="numTickets">Number of Tickets:</label>
+            <input type="number" id="numTickets" name="numTickets" min="1" max="10" required>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+
+        <div id="summary">
+            <h2>Booking Summary</h2>
+            <p id="summaryText">No tickets booked yet.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
